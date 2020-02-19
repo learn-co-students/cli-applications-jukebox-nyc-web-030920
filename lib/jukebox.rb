@@ -81,6 +81,6 @@ def run(my_songs)
     end
   end
   
-  exit_jukebox()
+  exit_jukebox
 end
 
