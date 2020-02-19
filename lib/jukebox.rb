@@ -27,7 +27,6 @@ def list(songs)
     puts "#{index + 1}. #{name}"
   end
 end 
-list(songs)
 
 
 
@@ -43,25 +42,23 @@ def play(songs)
     puts "Invalid input, please try again"
   end
 end
-play(songs)
 
 
 
 def exit_jukebox
   puts "Goodbye"
 end
-exit_jukebox
+
 
 
 def prompt
-  puts "Please enter a command:"
+  puts "Please type a command: " 
   user_input = gets.chomp
 end
 
 
 
 def run(my_songs)
-  help
   input = prompt
   
   while input != "exit"
@@ -76,11 +73,27 @@ def run(my_songs)
       input = prompt
     else
       puts "Invalid command"
-      help
       input = prompt
     end
   end
   
   exit_jukebox
 end
+
+
+# def run(songs)
+  
+#   input = ""
+  
+#   while input 
+#     puts "Please enter a command:"
+#     input = gets.strip
+#   case input
+#     when 
+  
+  
+  
+# end
+
+
 
